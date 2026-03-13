@@ -1,0 +1,87 @@
+body{
+    margin:0;
+    background-color: #F8FAFC;
+    font-family: "Archivo Black", sans-serif;
+    
+}
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.changa-one-regular {
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.changa-one-regular-italic {
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+.logo img{
+    height: 70px;
+    margin-right: 30px;
+}
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #414177; /* primary szín */
+  position: sticky;
+  top:0;
+  border-radius: 5px;
+}
+
+/* menü lista vízszintesen */
+.navbar ul {
+  display: flex;          /* sorban rendezi a li-ket */
+  list-style: none;       /* pontok eltüntetése */
+  gap: 30px;              /* távolság a menüpontok között */
+  margin: 0;
+  padding: 0;
+  margin-left:auto;
+}
+
+/* linkek stílusa */
+.navbar ul li a {
+  text-decoration: none;  /* aláhúzás eltüntetése */
+  color: white;           /* fehér szín */
+  position: relative;     /* hover underline animációhoz */
+  padding: 5px 0;
+  transition: color 0.3s;
+  font-size: 20px;
+}
+
+/* hover szín */
+.navbar ul li a:hover {
+  color: #00d4ff; /* accent szín */
+}
+
+/* hover underline animáció */
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #00d4ff;
+  transition: width 0.3s;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
