@@ -39,38 +39,37 @@ body{
   display: flex;
   align-items: center;
   padding: 20px 60px;
-  background-color: #414177; /* primary szín */
+  background-color: #343479; 
   position: sticky;
   top:0;
   border-radius: 5px;
 }
 
-/* menü lista vízszintesen */
+
 .navbar ul {
-  display: flex;          /* sorban rendezi a li-ket */
-  list-style: none;       /* pontok eltüntetése */
-  gap: 30px;              /* távolság a menüpontok között */
-  margin: 0;
+  display: flex;          
+  list-style: none;       
+  gap: 30px;             
   padding: 0;
   margin-left:auto;
 }
 
-/* linkek stílusa */
+
 .navbar ul li a {
-  text-decoration: none;  /* aláhúzás eltüntetése */
-  color: white;           /* fehér szín */
-  position: relative;     /* hover underline animációhoz */
+  text-decoration: none;  
+  color: white;           
+  position: relative;     
   padding: 5px 0;
   transition: color 0.3s;
   font-size: 20px;
 }
 
-/* hover szín */
+
 .navbar ul li a:hover {
-  color: #00d4ff; /* accent szín */
+  color: #00d4ff; 
 }
 
-/* hover underline animáció */
+
 .navbar ul li a::after {
   content: "";
   position: absolute;
@@ -85,3 +84,72 @@ body{
 .navbar ul li a:hover::after {
   width: 100%;
 }
+
+.hero{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background-size: 600% 600%;
+  animation: gradientMove 8s ease infinite;
+  backdrop-filter: blur(10px);
+}
+
+
+@keyframes gradientMove {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;;
+  }
+}
+
+
+.hero-content h1{
+  font-size: 3rem;
+  margin-bottom: 20px;
+  display: flex;
+  gap:20px;
+}
+
+.hero-content p{
+  margin-bottom: 20px;
+  color:#cbd5f5;
+}
+
+.btn {
+  position: relative;
+  overflow: hidden;
+  color: #3b82f6;
+  border: 2px solid #3b82f6;
+  background: transparent;
+  padding: 12px 24px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 0%;
+  background: linear-gradient(135deg, #3b82f6, #2c5364);
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn:hover {
+  color: white;
+}
+
