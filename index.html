@@ -227,7 +227,25 @@ Modern design, gyors működés és felhasználóközpontú megoldások.</p>
             <a href="services.html" class="btn">Tudj meg többet!</a>
                 </div>
         </div>
-
+</section>
+<section class="contact">
+    <div class="contact-container">
+        <div class="contact-text">
+            <h2>Dolgozzunk együtt!</h2>
+            <p>Van egy projekt ötleted? írj nekem és megvalósítjuk.</p>
+        </div>
+        <form class="contact-form" onsubmit="sendEmail(event)">
+            <input id="name" type="text" placeholder="Neved" required>
+            <input id="email" type="email" placeholder="Email címed">
+            <textarea id="message" placeholder="Üzeneted" required></textarea>
+            <button type="submit" class="btn">Küldés</button>
+            <div class="contact-extra">
+                <p>✔ Ingyenes konzultáció</p>
+                <p>✔ Gyors válasz</p>
+                <p>✔ Nincs kötelezés</p>
+            </div>
+        </form>
+    </div>
 </section>
 </main>
 
@@ -235,5 +253,32 @@ Modern design, gyors működés és felhasználóközpontú megoldások.</p>
     
 </footer>
 
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+(function(){
+  emailjs.init("obpKQMu5fwfWZ0csw");
+})();
+
+function sendEmail(e) {
+  e.preventDefault();
+
+  emailjs.send("service_m1hhsx3", "template_497u4cl", {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value
+  })
+  .then(function(response) {
+    alert("Elküldve!");
+  })
+  .catch(function(error) {
+    alert("Hiba történt!");
+    console.log(error);
+  });
+}
+</script>
 </body>
+
+
 </html>

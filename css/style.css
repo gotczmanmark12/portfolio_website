@@ -386,7 +386,50 @@ body{
   margin-top:40px;
 }
 
+.contact{
+  background: #0a0f1c;
+  padding:80px 0;
+}
 
+.contact-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:20px;
+  gap:120px;
+}
+
+.contact-text{
+  color:white;
+}
+
+.contact-text h2{
+  font-size: 32;
+}
+
+.contact-text p{
+  font-size: 16;
+}
+
+input, textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  background: #111827;
+  color:white;
+  border-radius: 8px;
+  border:none;
+}
+
+.contact-extra{
+  margin-top:15px;
+}
+
+.contact-extra p{
+  color: rgba(255,255,255,0.6);
+  font-size: 13px;
+  margin: 5px 0;
+}
 
 @media (max-width: 900px)
 {
@@ -399,7 +442,7 @@ body{
   }
 }
 
-@media (max-width:500px)
+@media (max-width:768px)
 {
   .feature{
     width:100%;
@@ -411,5 +454,11 @@ body{
 
    .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .contact-container{
+    flex-direction: column;
+    gap:40px;
+    text-align:center;
   }
 }
