@@ -126,6 +126,7 @@ h1, h2, h3{
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   background-size: 600% 600%;
   animation: gradientMove 8s ease infinite;
+  padding:20px;
   backdrop-filter: blur(10px);
 }
 
@@ -828,5 +829,18 @@ section.show {
   input,
   textarea {
     max-width: 85%;
+  }
+   .hero {
+    height: auto;       
+    padding: 60px 20px;
+  }
+  .hero h1{
+    font-size:2rem;
+    line-height:1.2;
+    margin-bottom:1rem;
+  } 
+  .hero p {
+    font-size: 1rem;  
+    line-height: 1.5;
   }
 }
