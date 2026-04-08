@@ -710,7 +710,7 @@ section.show {
 
 
 
-@media (max-width: 900px)
+@media (max-width: 900px) and (min-width: 769px)
 {
    .feature-grid{
     grid-template-columns: repeat(2, 1fr);
@@ -725,7 +725,96 @@ section.show {
   .footer-upper-container > div{
     flex: 1 1 45%;
   }
+  
+  .hero {
+    height: auto;
+    padding: 50px 40px;
+    text-align: center;
+  }
 
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+}
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: flex; /* Megjelenik a hamburger */
+    margin-left: auto;
+  }
+
+  .navbar ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #343479;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .navbar ul.active {
+    max-height: 300px;
+    padding: 20px 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .footer-upper-container {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-around; 
+    padding: 30px;
+  }
+
+  .footer-upper-container > div {
+    flex: 1 1 40%; 
+    max-width: 45%;
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 40px;
+  }
+
+  .footer-menu-links {
+    gap: 15px;
+  }
+
+  .footer-social-links {
+    gap: 15px;
+  }
 }
 
 @media (max-width:768px)
