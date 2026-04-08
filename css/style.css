@@ -913,3 +913,37 @@ section.show {
   }
 
 }
+
+@media (min-width: 769px) and (max-width: 900px) {
+  .navbar {
+    padding: 20px 30px; 
+    z-index: 1000;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+    z-index: 1100; 
+  }
+
+  .navbar ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #343479;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    z-index: 1000;
+  }
+
+  .navbar ul.active {
+    max-height: 400px; 
+  }
+}
