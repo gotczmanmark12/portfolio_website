@@ -814,7 +814,6 @@ section.show {
     height: auto;       
     padding: 60px 20px;
     min-height: 60vh;
-    animation: none;
   }
   .hero h1{
     font-size:2rem;
