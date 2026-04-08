@@ -265,7 +265,7 @@ h1, h2, h3{
   color:white;
   border:1px solid rgba(0, 212, 255, 0.2);
   border-radius: 12px;
-  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.05);
 }
 
 .services-card:hover{
@@ -355,7 +355,7 @@ h1, h2, h3{
   color:white;
   border:1px solid rgba(0, 212, 255, 0.2);
   border-radius: 12px;
-  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.05);
 }
 
 .projects-card:hover{
