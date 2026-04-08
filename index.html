@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Modern, gyors és mobilbarát weboldalak vállalkozásoknak. Webfejlesztés, design és teljes körű támogatás.">
 <title>SiteVibeStudio</title>
 <link rel="stylesheet" href="css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,44 +15,48 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 <body>
 
-<header></header>
-
-<main>
-<div class="navbar">
-
+<header class="navbar">
      <div class="logo">
-       <a href="index.html"><img src="images/vibesitelogo.png"/></a>
+       <a href="#main"><img src="images/vibesitelogo.png" alt="SiteVibeStudio logó"/></a>
     </div>
 
     <nav>
-        <ul>
-            <li><a href="index.html">Főoldal</a></li>
-            <li><a href="projects.html">Projektek</a></li>
-            <li><a href="about.html">Rólunk</a></li>
-            <li><a href="services.html">Szolgáltatások</a></li>
-            <li><a href="contact.html">Kapcsolat</a></li>
+        <ul id="nav-menu">
+            <li><a href="#main">Főoldal</a></li>
+            <li><a href="#services">Szolgáltatások</a></li>
+            <li><a href="#projects">Projektek</a></li>
+            <li><a href="#contact">Kapcsolat</a></li>
+            <li><a href="#about">Rólam</a></li>
         </ul>
     </nav>
-</div>
 
-<section class="hero">
+    <div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+</header>
+
+<main>
+
+<section class="hero show" id="main">
  <div class="hero-content">
         <h1>Modern weboldalak vállalkozásoknak</h1>
         <p>Gyors, letisztult és mobilbarát megoldások, hogy több ügyfeled legyen!</p>
-        <a href="contact.html" class="btn">Kapcsolat</a>
+        <a href="#contact" class="btn">Kapcsolat</a>
     </div>
 </section>
 
 <section class="features">
     <div class="features-header">
         <h2>Miért válassz minket?</h2>
-        <p>Modern megoldások, amelyek egyszerübbé teszik a munkád.</p>
+        <p>Modern megoldások, amelyek egyszerűbbé teszik a munkád.</p>
     </div>
     <div class="feature-grid">
     <div class="feature">
         <i class="fa-solid fa-bolt"></i>
         <h3>Gyors</h3>
-        <p>Villámgyors betöltés minen eszközön.</p>
+        <p>Villámgyors betöltés minden eszközön.</p>
     </div>
     <div class="feature">
         <i class="fa-solid fa-mobile-screen"></i>
@@ -83,7 +88,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     </div>
     </div>
 </section>
-<section class="services">
+
+
+<section class="services" id="services">
      <div class="services-header">
         <h2>Szolgáltatások</h2>
         <p>Weboldalak és alkalmazások készítése, teljes körű támogatással.</p>
@@ -134,11 +141,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     </div>
     <div class="services-footer">
         <div class="ctabutton"></div>
-        <a href="services.html" class="btn">Kérj ajánlatot!</a>
+        <a href="#contact" class="btn">Kérj ajánlatot!</a>
         </div>
     </div>
 </section>
-<section class="projects">
+
+<section class="projects" id="projects">
     <div class="projects-header">
         <h2>Projektek</h2>
         <p>Valós problémákra épített weboldalak és alkalmazások.
@@ -149,64 +157,7 @@ Modern design, gyors működés és felhasználóközpontú megoldások.</p>
 
     <div class="projects-card">
         <div class="projects-card-img">
-            <img src="images/project1.png" alt="">
-        </div>
-
-        <div class="projects-card-header">
-            <h3>Ákosi Ref. Gyül. Weboldala</h3>
-            <p>Ez egy Wordpress projekt, mivel így könnyebb kezelni a jövőben az ügyfélnek.</p>
-        </div>
-
-        <div class="projects-card-footer">
-            <a href="https://akos.ciid.ro" class="btn" target="_blank ">Nézd meg ⬈</a>
-            <a href="https://github.com/gotczmanmark12" class="github-link" target="_blank ">
-                <i class="fa-brands fa-github"></i>
-            </a>
-        </div>
-
-    </div>
-
-        <div class="projects-card">
-        <div class="projects-card-img">
-            <img src="images/project1.png" alt="">
-        </div>
-
-        <div class="projects-card-header">
-            <h3>Ákosi Ref. Gyül. Weboldala</h3>
-            <p>Ez egy Wordpress projekt, mivel így könnyebb kezelni a jövőben az ügyfélnek.</p>
-        </div>
-
-        <div class="projects-card-footer">
-            <a href="https://akos.ciid.ro" class="btn" target="_blank ">Nézd meg ⬈</a>
-            <a href="https://github.com/gotczmanmark12" class="github-link" target="_blank ">
-                <i class="fa-brands fa-github"></i>
-            </a>
-        </div>
-
-    </div>
-
-        <div class="projects-card">
-        <div class="projects-card-img">
-            <img src="images/project1.png" alt="">
-        </div>
-
-        <div class="projects-card-header">
-            <h3>Ákosi Ref. Gyül. Weboldala</h3>
-            <p>Ez egy Wordpress projekt, mivel így könnyebb kezelni a jövőben az ügyfélnek.</p>
-        </div>
-
-        <div class="projects-card-footer">
-            <a href="https://akos.ciid.ro" class="btn" target="_blank ">Nézd meg ⬈</a>
-            <a href="https://github.com/gotczmanmark12" class="github-link" target="_blank ">
-                <i class="fa-brands fa-github"></i>
-            </a>
-        </div>
-
-    </div>
-
-        <div class="projects-card">
-        <div class="projects-card-img">
-            <img src="images/project1.png" alt="">
+            <img src="images/project1.png" alt="Projekt előnézet">
         </div>
 
         <div class="projects-card-header">
@@ -216,7 +167,64 @@ Modern design, gyors működés és felhasználóközpontú megoldások.</p>
 
         <div class="projects-card-footer">
             <a href="https://akos.ciid.ro" class="btn" target="_blank">Nézd meg ⬈</a>
-            <a href="https://github.com/gotczmanmark12" class="github-link" target="_blank ">
+            <a href="https://github.com/gotczmanmark12" class="github-link" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+
+    </div>
+
+        <div class="projects-card">
+        <div class="projects-card-img">
+            <img src="images/project1.png" alt="Projekt előnézet">
+        </div>
+
+        <div class="projects-card-header">
+            <h3>Ákosi Ref. Gyül. Weboldala</h3>
+            <p>Ez egy Wordpress projekt, mivel így könnyebb kezelni a jövőben az ügyfélnek.</p>
+        </div>
+
+        <div class="projects-card-footer">
+            <a href="https://akos.ciid.ro" class="btn" target="_blank">Nézd meg ⬈</a>
+            <a href="https://github.com/gotczmanmark12" class="github-link" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+
+    </div>
+
+        <div class="projects-card">
+        <div class="projects-card-img">
+            <img src="images/project1.png" alt="Projekt előnézet">
+        </div>
+
+        <div class="projects-card-header">
+            <h3>Ákosi Ref. Gyül. Weboldala</h3>
+            <p>Ez egy Wordpress projekt, mivel így könnyebb kezelni a jövőben az ügyfélnek.</p>
+        </div>
+
+        <div class="projects-card-footer">
+            <a href="https://akos.ciid.ro" class="btn" target="_blank">Nézd meg ⬈</a>
+            <a href="https://github.com/gotczmanmark12" class="github-link" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+
+    </div>
+
+        <div class="projects-card">
+        <div class="projects-card-img">
+            <img src="images/project1.png" alt="Projekt előnézet">
+        </div>
+
+        <div class="projects-card-header">
+            <h3>Ákosi Ref. Gyül. Weboldala</h3>
+            <p>Ez egy Wordpress projekt, mivel így könnyebb kezelni a jövőben az ügyfélnek.</p>
+        </div>
+
+        <div class="projects-card-footer">
+            <a href="https://akos.ciid.ro" class="btn" target="_blank">Nézd meg ⬈</a>
+            <a href="https://github.com/gotczmanmark12" class="github-link" target="_blank">
                 <i class="fa-brands fa-github"></i>
             </a>
         </div>
@@ -224,15 +232,16 @@ Modern design, gyors működés és felhasználóközpontú megoldások.</p>
 </div>
  <div class="projects-footer">
             <div class="projects-cta">
-            <a href="services.html" class="btn">Tudj meg többet!</a>
+            <a href="#contact" class="btn">Tudj meg többet!</a>
                 </div>
         </div>
 </section>
-<section class="contact">
+
+<section class="contact" id="contact">
     <div class="contact-container">
         <div class="contact-text">
             <h2>Dolgozzunk együtt!</h2>
-            <p>Van egy projekt ötleted? írj nekem és megvalósítjuk.</p>
+            <p>Van egy projekt ötleted? Írj nekem és megvalósítjuk.</p>
         </div>
         <form class="contact-form" onsubmit="sendEmail(event)">
             <input id="name" type="text" placeholder="Neved" required>
@@ -247,42 +256,12 @@ Modern design, gyors működés és felhasználóközpontú megoldások.</p>
         </form>
     </div>
 </section>
-</main>
 
-<footer>
-    
-</footer>
-
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script>
-(function(){
-  emailjs.init("obpKQMu5fwfWZ0csw");
-})();
-
-function sendEmail(e) {
-  e.preventDefault();
-
-  emailjs.send("service_m1hhsx3", "template_497u4cl", {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("message").value
-  })
-  .then(function(response) {
-    alert("Elküldve!");
-  })
-  .catch(function(error) {
-    alert("Hiba történt!");
-    console.log(error);
-  });
-}
-</script>
-<section class="about">
+<section class="about" id="about">
 
     <div class="about-container">
         <div class="about-image">
-            <img src="images/GM1.jpg" alt="About-image">
+            <img src="images/GM1.jpg" alt="Gotczman Márk portré">
         </div>
          <div class="about-text">
             <h2>Rólam</h2>
@@ -292,22 +271,24 @@ Szeretem az egyszerű, modern és mobilbarát designokat, amelyek tényleg műk�
                 <li>Egyedi, ügyfélre szabott weboldalak</li>
                 <li>Gyors és megbízható munkavégzés</li>
             </ul>
-            <a href="contact.html" class="btn">Vedd fel a kapcsolatot most!</a>
+            <a href="#contact" class="btn">Vedd fel a kapcsolatot most!</a>
         </div>
     </div>
-
 </section>
+
+</main>
+
 <footer>
     <section class="footer-upper-container">
     <div class="logo-container">
         <div class="footer-logo">
-            <img src="images/footerlogo.png" alt="footer-logo">
+            <img src="images/footerlogo.png" alt="SiteVibeStudio logó">
             <h3>
                 <span class="blue">SiteVibe</span><span class="white">Studio</span>
             </h3>
         </div>
         <div class="footer-text">
-            <p>Modern, gyors és egyedi weboldalak vállalkozásoknak. Digitális élmények, amik valódi eredményeeket hoznak.</p>
+            <p>Modern, gyors és egyedi weboldalak vállalkozásoknak. Digitális élmények, amik valódi eredményeket hoznak.</p>
         </div>
         <div class="footer-extra">
             <p>
@@ -330,19 +311,19 @@ Szeretem az egyszerű, modern és mobilbarát designokat, amelyek tényleg műk�
         </div>
         <ul class="footer-menu-links">
             <li>
-                <a href="index.html">Főoldal <span>></span></a>
+                <a href="#main">Főoldal <span>></span></a>
             </li>
             <li>
-                <a href="projects.html">Projektek <span>></span></a>
+                <a href="#services">Szolgáltatások <span>></span></a>
             </li>
             <li>
-                <a href="about.html">Rólam <span>></span></a>
+                <a href="#projects">Projektek<span>></span></a>
             </li>
             <li>
-                <a href="services.html">Szolgáltatások <span>></span></a>
+                <a href="#contact">Kapcsolat <span>></span></a>
             </li>
             <li>
-                <a href="contact.html">Kapcsolat <span>></span></a>
+                <a href="#about">Rólam <span>></span></a>
             </li>
         </ul>
     </div>
@@ -353,7 +334,7 @@ Szeretem az egyszerű, modern és mobilbarát designokat, amelyek tényleg műk�
         <div class="footer-kapcsolat-adatok">
             <p>
             <i class="fa-solid fa-envelope"></i>
-            hello@sitevibesutdio.ro
+            hello@sitevibestudio.ro
             </p>
             <p>
                 <i class="fa-solid fa-phone"></i>
@@ -398,5 +379,29 @@ Szeretem az egyszerű, modern és mobilbarát designokat, amelyek tényleg műk�
     </div>
 </section>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+(function(){
+  emailjs.init("obpKQMu5fwfWZ0csw");
+})();
+
+function sendEmail(e) {
+  e.preventDefault();
+
+  emailjs.send("service_m1hhsx3", "template_497u4cl", {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value
+  })
+  .then(function(response) {
+    alert("Elküldve!");
+  })
+  .catch(function(error) {
+    alert("Hiba történt!");
+    console.log(error);
+  });
+}
+</script>
+<script src="js/script.js" defer></script>
 </body>
 </html>
